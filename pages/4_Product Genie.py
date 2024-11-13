@@ -128,7 +128,7 @@ def display_instagram_preview(image, content):
         col1, col2 = st.columns([1, 1])
         
         with col1:
-            st.image(image, use_container_width=True)
+            st.image(image, use_column_width=True)
         
         with col2:
             st.markdown("### ✍️ Caption")
@@ -185,7 +185,7 @@ def main():
                 try:
                     # Display uploaded image
                     image = Image.open(uploaded_file)
-                    st.image(image, caption="Uploaded Product", use_container_width=True)
+                    st.image(image, caption="Uploaded Product", use_column_width=True)
                     
                     # Product analysis button
                     if st.button("✨ Analyze Product & Generate Post"):
